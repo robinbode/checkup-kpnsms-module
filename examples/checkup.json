@@ -1,0 +1,24 @@
+{
+  "checkers": [
+    {
+      "type": "http",
+      "endpoint_name": "HTTP: Test webserver",
+      "endpoint_url": "https://test.domain.com/",
+      "must_contain": "test"
+    }
+  ],
+
+  "storage": {
+    "provider": "fs",
+    "dir": "/home/username/status_checks",
+    "url": "https://domain.com/checks"
+  },
+
+  "notifier": {
+    "name": "kpnsms",
+    "APP_CONSUMER_KEY": "",
+    "APP_CONSUMER_SECRET": "",
+    "SENDER": "Sender",
+    "PHONENUMBERSLOCATION": "/home/username/phonenumbers.list"
+  }
+}
